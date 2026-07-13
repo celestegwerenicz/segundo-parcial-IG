@@ -3,12 +3,16 @@ body {
     background-attachment: fixed;
 }
 
-h1 {
+h1{
     text-align: center;
     font-size: 2.5rem;
     background-color: rgb(220, 233, 245);
     display: inline-block;
     padding: 1rem;
+}
+
+h1, h2, strong{
+    color: rgb(27, 64, 99)
 }
 
 header{
@@ -17,21 +21,15 @@ header{
 
 .header-contenido{
     text-align: left;
-}
-
-.header-contenido, footer{
     background-color: rgb(220, 233, 245);
     padding: 3rem;
-}
-
-.header-contenido{
     display: flex;
     align-items: center;
     gap: 2rem;
 }
 
 .Lozano-Hemmer{
-    max-width: 18rem;
+    max-width: 20rem;
     height: auto;
 }
 
@@ -80,17 +78,40 @@ a:active{
 	color: rgb(223, 246, 255);
 }
 
-main{
+main, .formulario{
     background-color: rgb(220, 233, 245);
     margin: 2rem;
     padding: 2rem;
     font-size: 1.15rem;
 }
 
+.titulo-publico{
+    text-align: center;
+    background-color: rgb(176, 211, 244);
+}
+
 .imagenes{
     text-align: center;
-    height: 20rem;
+    height: 15rem;
     width:auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.inicio{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.inicio article{
+    flex: 1;
+}
+
+.arte{
+    height: 18rem;
+    width: auto;
 }
 
 .cont{
@@ -104,4 +125,12 @@ main{
     height: 20rem;
     flex-shrink: o;
     margin-left: 30rem;
+}
+
+footer{
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(220, 223, 245);
+    background-color: rgb(53, 82, 110);
+    padding: 1rem;
 }
