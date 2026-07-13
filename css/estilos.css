@@ -12,7 +12,7 @@ h1{
 }
 
 h1, h2, strong{
-    color: rgb(27, 64, 99)
+    color: rgb(27, 64, 99);
 }
 
 header{
@@ -61,7 +61,6 @@ nav a{
 	padding: 0.4em 1em;
 	text-align: center;
 	text-decoration: none;
-    padding: 1rem;
     background-color: rgb(176, 211, 244);
 }
 
@@ -91,7 +90,6 @@ main, .formulario{
 }
 
 .imagenes{
-    text-align: center;
     height: 15rem;
     width:auto;
     display: block;
@@ -123,7 +121,7 @@ main, .formulario{
 .cont img{
     width: auto;
     height: 20rem;
-    flex-shrink: o;
+    flex-shrink: 0;
     margin-left: 30rem;
 }
 

@@ -42,6 +42,10 @@ document.querySelector('#btnAgregarObra').addEventListener('click', function() {
         return;
     }
     
+    if (obras.length === 0) {
+        alert('Debe ingresar al menos una obra');
+        return;
+    
     let obra = {
         nombre: nombre,
         cantidadLuces: Number(cantidad),
@@ -50,9 +54,7 @@ document.querySelector('#btnAgregarObra').addEventListener('click', function() {
     
     obras.push(obra);
 
-        if (obras.length === 0) {
-        alert('Debe ingresar al menos una obra');
-        return;
+        
 
     }
     // Mostrar la lista actualizada
@@ -159,8 +161,8 @@ function mostrarResultados(consumoTotal, consumoPromedio, obraMayor, costoMayor,
     div.innerHTML = `
         <h4>Análisis de Consumo</h4>
         
-        <p><strong>1. Consumo Diario Total:</strong> ${consumoTotal.toFixed(2)} <kWh</p>
-        <p><strong>   Consumo Diario Promedio por obra:</strong> ${consumoPromedio.toFixed(2)} <kWh/obra</p>
+        <p><strong>1. Consumo Diario Total:</strong> ${consumoTotal.toFixed(2)} kWh</p>
+        <p><strong>   Consumo Diario Promedio por obra:</strong> ${consumoPromedio.toFixed(2)} kWh/obra</p>
         
         <p><strong>2. Obra con mayor tiempo de funcionamiento:</strong> ${obraMayor.nombre}</p>
         <p><strong>   Tiempo de funcionamiento:</strong> ${obraMayor.tiempo} horas/día</p>
